@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Buscar en todo Carrefour(2)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "gqtEZP4ExEiYiNpcgXELxA",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/gqtEZP4ExEiYiNpcgXELxA",
+  "ParentRef": "prFsd4C05UiFEaKIEeF6Fg/VqfUbJtzWkq1enZ012K9RQ",
+  "Created": "2026-05-08T08:53:31.0471122Z",
+  "Updated": "2026-05-08T08:53:31.0471122Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

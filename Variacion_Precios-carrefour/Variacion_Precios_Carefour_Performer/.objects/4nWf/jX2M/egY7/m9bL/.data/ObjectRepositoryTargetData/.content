@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v8axPEa5iEKyEsaisxS5vw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="f79a9354-c85e-40ec-ad42-9ff948334407" CvElementArea="1006, 584, 139, 46" CvTextArea="1030, 599, 88, 16" CvTextArgument="Aceptar todas" CvType="Button" DesignTimeRectangle="1008, 585, 135, 44" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='ot-button-order-2' aaname='Aceptar todas' check:innerText='Aceptar todas' /&gt;" Guid="656b9577-2372-472e-b387-3c04493c4917" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f79a9354-c85e-40ec-ad42-9ff948334407" CvElementArea="858, 584, 138, 46" CvTextArea="880, 599, 95, 14" CvTextArgument="Rechazar todas" CvType="Button" DesignTimeRectangle="860, 585, 135, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-reject-all-handler' tag='BUTTON' type='' class='ot-button-order-1' aaname='Rechazar todas' check:innerText='Rechazar todas' /&gt;" Guid="0d6bc767-2873-4b64-801c-b82482afef4e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5cee72df01b25a23f385e41d09186b0d.png" xmlns="">0d52owqejLUya7ysWrDdVBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

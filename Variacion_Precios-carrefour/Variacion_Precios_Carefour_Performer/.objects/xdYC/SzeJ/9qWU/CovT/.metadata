@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Aceptar todas",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "CovTbmVkjUmaJX2pLHlIhw",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/CovTbmVkjUmaJX2pLHlIhw",
+  "ParentRef": "prFsd4C05UiFEaKIEeF6Fg/9qWUp0VBnk6_34fygKXVhw",
+  "Created": "2026-05-14T09:59:12.4700968Z",
+  "Updated": "2026-05-14T09:59:12.4700968Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

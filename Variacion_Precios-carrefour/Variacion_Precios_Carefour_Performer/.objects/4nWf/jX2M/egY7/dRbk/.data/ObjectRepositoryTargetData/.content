@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ee6PPTM7XkGPI8ofW1-ktA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="8367e9c8-0af8-432f-8e1b-8b1e2477c2fc" CvTextArea="330, 161, 172, 15" CvTextArgument="Buscar en todo Carrefour" CvType="Text" DesignTimeRectangle="316, 149, 708, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search-input' tag='INPUT' type='text' class='search-input search-box' placeholder='Buscar en todo Carrefour' aaname='Buscar en Carrefour' /&gt;" Guid="57ec843e-3a3a-40cb-9e98-f7e870c7ad8e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8367e9c8-0af8-432f-8e1b-8b1e2477c2fc" CvTextArea="226, 160, 51, 14" CvTextArgument="Folletos" CvType="Text" DesignTimeRectangle="228, 160, 48, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='cms-header__text--folletos' parentid='app' tag='A' type='' aaname='             Folletos           ' check:innerText='Folletos' /&gt;" Guid="b8ee6f47-69a2-4eba-99e6-28dd2a96f0e7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a8456bd3e1f7c93968ea1b4eb501b3f2.png" xmlns="">09QIKCs9yPUqm8wGYlXejSA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

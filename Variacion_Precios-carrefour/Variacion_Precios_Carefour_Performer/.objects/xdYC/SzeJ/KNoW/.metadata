@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Compra Online en Carrefour Ofertas en Al(1)",
+  "Type": "Screen",
+  "Id": "KNoWFqLpVU68g6_2824z6w",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/KNoWFqLpVU68g6_2824z6w",
+  "ParentRef": "prFsd4C05UiFEaKIEeF6Fg/SzeJ2coNsUqyO6wTiQRTdQ",
+  "Created": "2026-05-15T09:33:32.6333778Z",
+  "Updated": "2026-05-15T09:33:32.6333778Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

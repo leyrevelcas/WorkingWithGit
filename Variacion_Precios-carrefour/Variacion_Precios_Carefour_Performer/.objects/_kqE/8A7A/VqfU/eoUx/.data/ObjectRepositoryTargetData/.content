@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eIsCV1Z_CkyvGV_1ty2YPQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" DesignTimeRectangle="1175, 157, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='x-icon x-icon-lg x-text-neutral-90' aaname='' /&gt;" Guid="7aa381cc-d947-423f-9822-d2041fe5c792" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="92872d92-6592-4831-8a33-0d9d166e5199" CvElementArea="1207, 147, 44, 42" CvType="Button" DesignTimeRectangle="1216, 157, 24, 24" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' class='x-icon x-icon-lg' tag='svg' aaname='' /&gt;" Guid="3979b7b7-29d4-4a06-823d-e3ddd078583a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="62b076b86edc5d1e014009e6dcde4e22.png" xmlns="">0H0wBEbT4EU-eFOCsd9HA2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

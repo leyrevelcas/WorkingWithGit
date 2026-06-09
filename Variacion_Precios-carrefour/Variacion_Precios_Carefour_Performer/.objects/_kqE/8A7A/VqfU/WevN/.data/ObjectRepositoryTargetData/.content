@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3haMBAD_B0aYTM4nqnGuNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="4666ff35-7edd-48ad-b6aa-a6e35a25459a" CvElementArea="1532, 257, 55, 53" CvType="Button" DesignTimeRectangle="1534, 260, 50, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl type='' class='x-search-button x-button x-input-group-button-primary' tag='BUTTON' aaname='' /&gt;" Guid="3ebae2c9-9e79-4b2e-a447-bae72c1403a7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1492, 260, 32, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Borrar' tag='BUTTON' type='' class='x-clear-search-input x-button x-button-tight x-button-group x-rounded-full' aaname='' /&gt;" Guid="1e0514f7-c706-4673-8bb6-f407a6f7ee1e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="842a77f98d43b8a6133cd4007f288662.png" xmlns="">0g_8rWDk-z0uJjuyYYkvreQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

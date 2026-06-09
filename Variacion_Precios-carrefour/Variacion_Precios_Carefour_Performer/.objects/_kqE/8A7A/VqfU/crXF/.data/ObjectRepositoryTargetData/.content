@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XeR_r7zILkq8ZaWbEZjkzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" DesignTimeRectangle="1175, 158, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='x-icon x-icon-lg x-text-neutral-90' aaname='' /&gt;" Guid="197a0edc-8083-468d-80f9-b6ad72ac4791" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c28b93958c6148e5762623f1e31709f2.png" xmlns="">00mg3VGsIDEOn7L2bxF13nA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

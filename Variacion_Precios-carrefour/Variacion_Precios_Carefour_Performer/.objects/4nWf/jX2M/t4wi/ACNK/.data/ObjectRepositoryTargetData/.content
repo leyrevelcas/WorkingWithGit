@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kwN0hbCopE2jYUPJccbQjQ" Reference="prFsd4C05UiFEaKIEeF6Fg/ACNKeg6b40i-FVcrduwJ4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.carrefour.es/?gclid=b7451d5c30e21cd507657756f1c282ee&amp;gclsrc=3p.ds&amp;msclkid=b7451d5c30e21cd507657756f1c282ee&amp;query=aceite%20de%20oliva%20virgen%20extra%201l&amp;scroll=797329763" ContentHash="M2o_s9-_WkKtGv9mqY5pyg" DesignTimeRectangle="426, -1852, 1143, 2671" DesignTimeScaleFactor="1" ElementType="List" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='main-scroll' tag='UL' /&gt;" Guid="57ff77da-af74-4323-a694-697052f6e4ae" Reference="prFsd4C05UiFEaKIEeF6Fg/ACNKeg6b40i-FVcrduwJ4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3e086ec3da20eef5c070ccb8997a4722.png" xmlns="">0yzu1e_VGJ0WhY4x13CCfQA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='TextoproductoWeb'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='PrecioWeb'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="carrefour.es" CVScreenId="56101649-dd79-4361-a474-33190f25425a" CvElementArea="904, 902, 187, 43" CvTextArea="921, 914, 152, 19" CvTextArgument="Cargar más resultados" CvType="Button" DesignTimeRectangle="906, 904, 183, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Load' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Load' tag='BUTTON' type='' class='x-button x-rounded-sm' aaname='Cargar más resultados' check:innerText='Cargar más resultados' /&gt;" Guid="6cb1c56d-3b30-423a-97af-eead32497924" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

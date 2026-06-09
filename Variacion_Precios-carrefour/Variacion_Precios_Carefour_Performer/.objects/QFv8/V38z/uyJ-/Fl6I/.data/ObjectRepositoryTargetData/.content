@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PpciF7-OkkiQIuCom2qmYA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="e7a9b4a2-efc7-4483-9bba-26fa757f8f4e" DesignTimeRectangle="1340, 120, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" Guid="2c4a7beb-0fd4-43a6-86bc-5cabb78192fa" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0740b5d8ef65ee33c584f1d185e9e329.png" xmlns="">04_vIoWhCOE-TXkYIsJYiRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

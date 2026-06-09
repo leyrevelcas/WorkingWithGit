@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="-mHs2UuBgUOt8GtS4P9iEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF9SURBVDhP3ZG9SgNBFIWjNikm3kJHJaIW8e8F7CzkNhYiSAqLxFbfwjQKV+ziAwhWFnEVy0VSmixYJZsVHZcUBsGIgfwZI5pEJszC7qK14IGBuR/nnpm5Ewj8P9VT59PtnBl6rjSGACkNSHlAwrxdHjxLWwt+v0dN/WpaMH4k95Fo8gCQemo9SQZISd2wF/19fbUyxoRgvNWpVodkDUh3TkBsV9tQbAyQOlmzFPE0twu3o4LxnmD8wmGAVHMF7Ci2pljNKr5M9Y2fj6VhwXhXBtiTszHJlrePGSB9uZ5wD0jXgPThYqV4QlsPCMZP1ekyYFUFgC/gt2XJG4QE43kVsKUCQoD07jPrgPTmqrvxhDbuzGBEMF4WjF+6ZvDqmGO72qZiK3KIklnFl7Dj7auVMcYE4/VOtRpU5sIPAfIXulmzNONpdtTUr8KC8X25j0STe67r3kgGSCe6Yc/7+zyqp87D7Zw58FxpDALSISA9ANJS3i4Hz9LWnN//9/oGWtjjQ1zsLmoAAAAASUVORK5CYII=" Selector="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" Title="Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar" Url="https://www.carrefour.es/?gclid=5986a917806c161dd355c31168e15853&amp;gclsrc=3p.ds&amp;msclkid=5986a917806c161dd355c31168e15853" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="e41968558ef0ae11e66989bcff334996.jpg" xmlns="">0gs6t_Dm4JkSYLb5DagU_EQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

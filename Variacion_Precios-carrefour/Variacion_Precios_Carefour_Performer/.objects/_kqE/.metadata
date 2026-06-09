@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Compra Online en Carrefour Ofertas en",
+  "Type": "App",
+  "Id": "_kqEnsfY9UeNzQy7gpO0LQ",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/_kqEnsfY9UeNzQy7gpO0LQ",
+  "Created": "2026-05-06T08:10:05.3306265Z",
+  "Updated": "2026-05-06T08:10:05.3306265Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

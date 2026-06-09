@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yLickYttGkW4sxSKbPS_Rw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="246b00ac-c2ca-4570-bb5b-5e3e2c6f019c" CvElementArea="1006, 587, 138, 46" CvTextArea="1030, 603, 88, 16" CvTextArgument="Aceptar todas" CvType="Button" DesignTimeRectangle="1008, 589, 135, 43" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='ot-button-order-2' aaname='Aceptar todas' check:innerText='Aceptar todas' /&gt;" Guid="3726de54-9765-4a2e-923c-41cc99b84f16" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="246b00ac-c2ca-4570-bb5b-5e3e2c6f019c" CvElementArea="858, 588, 138, 46" CvTextArea="880, 603, 95, 14" CvTextArgument="Rechazar todas" CvType="Button" DesignTimeRectangle="860, 589, 135, 43" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-reject-all-handler' tag='BUTTON' type='' class='ot-button-order-1' aaname='Rechazar todas' check:innerText='Rechazar todas' /&gt;" Guid="572a689d-6451-446a-9910-87cfab8b9b39" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d309755c171b307270078d6f4584fb8d.png" xmlns="">0pQj98RhrCEax7Z7u84x0Dw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

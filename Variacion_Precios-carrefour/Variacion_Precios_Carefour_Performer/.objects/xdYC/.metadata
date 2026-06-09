@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Compra Online en Carrefour Ofertas en Alimentación, Tecnología, Hogar",
+  "Type": "App",
+  "Id": "xdYCxwblyEalq8zBRDSVnQ",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/xdYCxwblyEalq8zBRDSVnQ",
+  "Created": "2026-05-14T09:56:44.7878395Z",
+  "Updated": "2026-05-14T09:56:44.7878395Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oFRQj-ET1EmMF3WLJfmUQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="53a7eeb8-8232-42df-b4e3-79df95a2d842" CvTextArea="330, 161, 172, 15" CvTextArgument="Buscar en todo Carrefour" CvType="Text" DesignTimeRectangle="316, 149, 708, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search-input' tag='INPUT' type='text' class='search-input search-box' placeholder='Buscar en todo Carrefour' aaname='Buscar en Carrefour' /&gt;" Guid="f9abe5f5-efba-42ea-8a9c-69ab9b55a500" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="429502136d2eed48accfc68a59cdae4f.png" xmlns="">0PldQ-aDCMEekjoG73669aA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

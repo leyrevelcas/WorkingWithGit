@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zQLStK0ujkqPuUKDwlMO6A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.carrefour.es/?gclid=93e107752a8012bd36a26e8e00fb8d44&amp;gclsrc=3p.ds&amp;msclkid=93e107752a8012bd36a26e8e00fb8d44&amp;query=aceite%20de%20oliva%20virgen%20extra%201l&amp;sort=price%20desc" DesignTimeRectangle="487, 384, 1338, 3518" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='main-scroll' tag='UL' /&gt;" Guid="eb3165ec-af68-46ab-91b2-0df545b7e50b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8ab7051caa3395bf3418ad7a94536679.png" xmlns="">0RfAvKBgh-ESRBc38iAGG-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Folletos(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "dRbkP_5yPUCEZkPO8lt0-g",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/dRbkP_5yPUCEZkPO8lt0-g",
+  "ParentRef": "prFsd4C05UiFEaKIEeF6Fg/egY7yFGElESQbPQVMWxQPw",
+  "Created": "2026-05-21T08:51:08.4955782Z",
+  "Updated": "2026-05-21T08:51:08.4955782Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

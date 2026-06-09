@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BnSaEWX140mj_vjsW4B-AQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="ab57fbea-e574-417a-9b95-1f755347760d" CvElementArea="307, 258, 1234, 53" CvType="InputBox" DesignTimeRectangle="309, 260, 1215, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='x-search-input x-input x-ml-0 x-pl-8' placeholder='Buscar en todo Carrefour...' aaname='' /&gt;" Guid="1cba7b1d-badb-4e19-bdb8-33266f619d87" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ab57fbea-e574-417a-9b95-1f755347760d" CvElementArea="147, 270, 24, 27" CvTextArea="176, 274, 67, 20" CvTextArgument="Volver" CvType="ArrowButton" DesignTimeRectangle="109, 273, 134, 25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' Volver' aria-label='Close' tag='BUTTON' type='' class='x-events-modal-close-button x-button x-close-main-modal x-button-lead x-button-link x-text1-lg x-gap-8 x-justify-self-end x-pl-32 x-font-bold x-no-underline' check:innerText='Volver' /&gt;" Guid="a9046287-3691-48f8-aabc-396e60ef2724" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ba0d1488d14f7311397c37baea00d94d.png" xmlns="">0pAagU5XbFkGdXStoRItQ2Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

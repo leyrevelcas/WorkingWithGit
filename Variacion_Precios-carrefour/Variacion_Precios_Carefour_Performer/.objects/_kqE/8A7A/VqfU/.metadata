@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Compra Online en Carrefour Ofertas en",
+  "Type": "Screen",
+  "Id": "VqfUbJtzWkq1enZ012K9RQ",
+  "Reference": "prFsd4C05UiFEaKIEeF6Fg/VqfUbJtzWkq1enZ012K9RQ",
+  "ParentRef": "prFsd4C05UiFEaKIEeF6Fg/8A7AS0L2LUqQM3OAVFD1fQ",
+  "Created": "2026-05-06T08:10:05.4107694Z",
+  "Updated": "2026-05-06T08:10:05.4107694Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.14.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

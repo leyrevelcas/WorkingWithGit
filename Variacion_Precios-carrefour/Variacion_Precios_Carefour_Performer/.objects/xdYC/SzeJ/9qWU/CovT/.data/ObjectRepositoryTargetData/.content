@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aErTDGXUtUuwFJxTCiIN7g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="9d55dfab-cf77-4e5c-a23b-127a1e0cbf9f" CvElementArea="1165, 707, 174, 58" CvTextArea="1195, 726, 111, 19" CvTextArgument="Aceptar todas" CvType="Button" DesignTimeRectangle="1168, 710, 169, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='ot-button-order-2' aaname='Aceptar todas' check:innerText='Aceptar todas' /&gt;" Guid="9b7c6391-d49b-410b-b3ee-905da95a6f27" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9d55dfab-cf77-4e5c-a23b-127a1e0cbf9f" CvElementArea="981, 708, 173, 57" CvTextArea="1007, 726, 119, 17" CvTextArgument="Rechazar todas" CvType="Button" DesignTimeRectangle="984, 710, 169, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-reject-all-handler' tag='BUTTON' type='' class='ot-button-order-1' aaname='Rechazar todas' check:innerText='Rechazar todas' /&gt;" Guid="da30e53b-9ae0-45a8-88af-c811220153bd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a471b1af2f3990e262a694c43958cabf.png" xmlns="">0lxKWIKLzBk6NI-hSrprUBA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

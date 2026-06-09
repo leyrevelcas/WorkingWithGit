@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2PbO5YVRpEez-WXpexd32A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es/campanas/11-millones.e" CVScreenId="d3d743d8-168c-4f1f-afdf-0e4409260a28" CvElementArea="417, 247, 1121, 52" CvType="InputBox" DesignTimeRectangle="419, 246, 1116, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="7a70f464-e364-4c41-bc0f-40268298800f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ya somos 11 millones' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ae2eeebd-620e-4f46-969c-786947273cf3" CvTextArea="441, 262, 217, 18" CvTextArgument="Buscar en todo Carrefour" CvType="Text" DesignTimeRectangle="441, 262, 217, 20" ElementType="Text" Guid="26b22250-6300-4273-aa97-dd32c88bf84a" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7bdc0b24f8fc2238b139dc1b7fe26989.png" xmlns="">0SEFa1CLv6U-5tymXYPcNLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

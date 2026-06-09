@@ -1,0 +1,412 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BuscarProducto" this:BuscarProducto.ExtractDataTable="[New System.Data.DataTable]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_TransactionResult" Type="OutArgument(x:String)" />
+    <x:Property Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
+    <x:Property Name="ExtractDataTable" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="dt_ProductosExcel" Type="InOutArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>BuscarProducto_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Activities.System.Queues</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BuscarProducto" sap:VirtualizedContainerService.HintSize="1156,3861.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="URLCarrefour" />
+      <Variable x:TypeArguments="x:String" Name="Precio" />
+      <Variable x:TypeArguments="x:String" Name="out_TransactionResult" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Productos" />
+      <Variable x:TypeArguments="x:String" Name="Producto" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Config" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
+      <Variable x:TypeArguments="x:String" Name="tablaDepurada" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1107.2,3838.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="1070.4,3560.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1036.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Asignamos URL&quot;]" />
+          <Assign DisplayName="Assign: URLCarrefour" sap:VirtualizedContainerService.HintSize="1036.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="URLCarrefour" sap2010:WorkflowViewState.IdRef="VisualBasicReference`1_1" />
+              </OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[in_Config("URLCarrefour").ToString()]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1036.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[URLCarrefour]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1036.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Busqueda de Producto&quot;]" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge Compra Online en Carrefour Ofertas en Al" sap:VirtualizedContainerService.HintSize="1036.8,2864" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" OpenMode="IfNotOpen" ScopeGuid="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1003.2,2624" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'Aceptar todas'" sap:VirtualizedContainerService.HintSize="969.6,530.4" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,280" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Aceptar todas(1)'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="carrefour.es" CVScreenId="246b00ac-c2ca-4570-bb5b-5e3e2c6f019c" ContentHash="yLickYttGkW4sxSKbPS_Rw" CvElementArea="1006, 587, 138, 46" CvTextArea="1030, 603, 88, 16" CvTextArgument="Aceptar todas" CvType="Button" DesignTimeRectangle="1008, 589, 135, 43" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='ot-button-order-2' aaname='Aceptar todas' check:innerText='Aceptar todas' /&gt;" Guid="3726de54-9765-4a2e-923c-41cc99b84f16" InformativeScreenshot="d309755c171b307270078d6f4584fb8d.png" Reference="prFsd4C05UiFEaKIEeF6Fg/q7QZXNve90utOnrOOdOVsA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="246b00ac-c2ca-4570-bb5b-5e3e2c6f019c" CvElementArea="858, 588, 138, 46" CvTextArea="880, 603, 95, 14" CvTextArgument="Rechazar todas" CvType="Button" DesignTimeRectangle="860, 589, 135, 43" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-reject-all-handler' tag='BUTTON' type='' class='ot-button-order-1' aaname='Rechazar todas' check:innerText='Rechazar todas' /&gt;" Guid="572a689d-6451-446a-9910-87cfab8b9b39" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,176.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="carrefour.es" CVScreenId="f79a9354-c85e-40ec-ad42-9ff948334407" ContentHash="v8axPEa5iEKyEsaisxS5vw" CvElementArea="1006, 584, 139, 46" CvTextArea="1030, 599, 88, 16" CvTextArgument="Aceptar todas" CvType="Button" DesignTimeRectangle="1008, 585, 135, 44" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='ot-button-order-2' aaname='Aceptar todas' check:innerText='Aceptar todas' /&gt;" Guid="656b9577-2372-472e-b387-3c04493c4917" InformativeScreenshot="5cee72df01b25a23f385e41d09186b0d.png" Reference="prFsd4C05UiFEaKIEeF6Fg/m9bLTFXl4kWtUVwu_yLT_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f79a9354-c85e-40ec-ad42-9ff948334407" CvElementArea="858, 584, 138, 46" CvTextArea="880, 599, 95, 14" CvTextArgument="Rechazar todas" CvType="Button" DesignTimeRectangle="860, 585, 135, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-reject-all-handler' tag='BUTTON' type='' class='ot-button-order-1' aaname='Rechazar todas' check:innerText='Rechazar todas' /&gt;" Guid="0d6bc767-2873-4b64-801c-b82482afef4e" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="969.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;producto actual&quot; + in_TransactionItem.SpecificContent(&quot;PRODUCTO&quot;).ToString]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="969.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Producto]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("PRODUCTO").ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="969.6,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[Producto]" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Buscar en todo Carrefour'" sap:VirtualizedContainerService.HintSize="969.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="carrefour.es" CVScreenId="6cf110fc-0947-42e9-9f6a-0391bb633997" ContentHash="xyVxQxZbz02KRUEah4-SAA" CvElementArea="321, 93, 889, 42" CvType="InputBox" DesignTimeRectangle="322, 94, 888, 41" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="94d86f60-d75c-4ce5-be33-d2242e6ad6b7" InformativeScreenshot="05b5ec6c545a9b86cc7b0f21db6fd2aa.png" Reference="prFsd4C05UiFEaKIEeF6Fg/tttTxpeMZEyo0UVAU8lDSA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="6cf110fc-0947-42e9-9f6a-0391bb633997" CvTextArea="339, 107, 174, 16" CvTextArgument="Buscar en todo Carrefour" CvType="Text" DesignTimeRectangle="340, 107, 173, 16" ElementType="Text" Guid="e0470e51-6860-409f-b63c-db0323b2bd24" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Folletos'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="969.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Text="[in_TransactionItem.SpecificContent(&quot;PRODUCTO&quot;).ToString]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="carrefour.es" CVScreenId="89b0c98c-32f7-4f9d-bcb4-b29add9cc7ab" CvTextArea="339, 154, 174, 16" CvTextArgument="Buscar en todo Carrefour" CvType="Text" DesignTimeRectangle="325, 142, 926, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search-input' tag='INPUT' type='text' class='search-input search-box' placeholder='Buscar en todo Carrefour' aaname='Buscar en Carrefour' /&gt;" Guid="bfe4f3c0-894d-4565-87ba-2034ae2a29e5" InformativeScreenshot="90593fa05cc3ab0444e02f89486aae1e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="89b0c98c-32f7-4f9d-bcb4-b29add9cc7ab" CvTextArea="229, 153, 56, 15" CvTextArgument="Folletos" CvType="Text" DesignTimeRectangle="230, 153, 55, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='cms-header__text--folletos' parentid='app' tag='A' type='' aaname='             Folletos           ' check:innerText='Folletos' /&gt;" Guid="d032ed86-1ce4-42f4-b9a2-c8bcf5a4ccaa" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="969.6,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="884682d3-65e1-4570-a712-97617e7b6237">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                  <uix:NCheckState DisplayName="Check App State '¡Vaya! No hemos encontr…'" sap:VirtualizedContainerService.HintSize="969.6,968.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Timeout="5" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,442.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTakeScreenshot DisplayName="Take Screenshot '¡Vaya! No hemos encontr…(1)'" FileName="C:\Proyectos UIPath\Variacion_Precios-carrefour\CapturasPantalla\screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="416,265.6" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Version="V4">
+                          <uix:NTakeScreenshot.Target>
+                            <uix:TargetAnchorable BrowserURL="carrefour.es" ContentHash="jnct3JBhxk2UH6kz44I_EQ" DesignTimeRectangle="747, 254, 664, 142" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='x-message x-text x-col-span-6 x-col-start-5' tag='DIV' aaname='' check:innerText='¡Vaya! No hemos encontrado coincidencias para kfjd.&amp;#xA;&amp;#xA;Sin embargo, encontramos productos para:&amp;#xA;&amp;#xA;kind' /&gt;" Guid="3962acd5-7fb7-475e-90fd-06b79772d8d9" InformativeScreenshot="da9b0b257c73e2e4ce23b6aa18d165de.png" Reference="prFsd4C05UiFEaKIEeF6Fg/EqJbmO-KBEOrEclYyT6oFQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="716fc2d5-9222-405c-abb1-bbcde13b3c1e" CvElementArea="407, 160, 1048, 43" CvType="InputBox" DesignTimeRectangle="409, 161, 1001, 40" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='x-search-input x-input x-ml-0 x-pl-8' placeholder='Buscar en todo Carrefour...' aaname='' /&gt;" Guid="5feedf5c-aa4f-4108-9128-b4e406e7fe46" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTakeScreenshot.Target>
+                        </uix:NTakeScreenshot>
+                        <Throw Exception="[New BusinessRuleException(&quot;EXN_001: El producto &quot; + Producto + &quot; no existe&quot;)]" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="467.2,725.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBefore="3" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='precio'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='nombre'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c3274bae-84bf-44ac-82ba-a8db3dda4dea" Version="V4">
+                          <uix:NExtractData.NextLink>
+                            <uix:TargetAnchorable BrowserURL="carrefour.es" CVScreenId="7b65abff-5e83-4439-b737-ec4d893938f7" CvElementArea="830, 706, 185, 42" CvTextArea="845, 718, 153, 18" CvTextArgument="Cargar más resultados" CvType="Button" DesignTimeRectangle="906, 904, 183, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Load' tag='BUTTON' aaname='Cargar más resultados' innertext='Cargar más resultados' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Load' tag='BUTTON' aaname='Cargar más resultados' innertext='Cargar más resultados' type='' class='x-button x-rounded-sm' check:text='Cargar más resultados' /&gt;" Guid="62034bd3-2339-44be-8410-85916a99d3f6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NExtractData.NextLink>
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.carrefour.es/?page=2&amp;query=Lata%20de%20cerveza%2033%20cl&amp;scroll=562901549&amp;sort=price%20desc" DesignTimeRectangle="426, -5568, 1143, 7025" DesignTimeScaleFactor="1" ElementType="List" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='main-scroll' tag='UL' /&gt;" Guid="b366a57a-3734-41e6-be85-b19fb601fecd" InformativeScreenshot="416c95de91e0b352eaef17976a436fe4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                        </uix:NExtractData>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[String.Join(&quot;, &quot;, ExtractDataTable.Columns.Cast(Of System.Data.DataColumn)().Select(Function(c) c.ColumnName).ToArray())]" />
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;Valor de Producto: &quot; + Producto]" />
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Filas extraídas: &quot; + ExtractDataTable.Rows.Count.ToString]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Producto]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("PRODUCTO").ToString]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="carrefour.es" DesignTimeRectangle="747, 254, 664, 142" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='x-message x-text x-col-span-6 x-col-start-5' tag='DIV' aaname='' check:innerText='¡Vaya! No hemos encontrado coincidencias para kfjd.&amp;#xA;&amp;#xA;Sin embargo, encontramos productos para:&amp;#xA;&amp;#xA;kind' /&gt;" Guid="c680196b-ccc1-4fd5-b062-aa43c0b72511" InformativeScreenshot="da9b0b257c73e2e4ce23b6aa18d165de.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="716fc2d5-9222-405c-abb1-bbcde13b3c1e" CvElementArea="407, 160, 1048, 43" CvType="InputBox" DesignTimeRectangle="409, 161, 1001, 40" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='x-search-input x-input x-ml-0 x-pl-8' placeholder='Buscar en todo Carrefour...' aaname='' /&gt;" Guid="c69bccee-31a2-40fc-8b47-207a99fcafc4" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-1688, 19, 1696, 1018" BrowserType="Edge" ContentHash="kfpfhFTkeEWe8Ze3wm3OPQ" IconBase64="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" InformativeScreenshot="23c1eb882709bc807f8f9c8cd48dc3a4.jpg" Reference="prFsd4C05UiFEaKIEeF6Fg/uyJ-e9HlxUKGu_Oba3wt0g" Selector="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" Title="Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar" Url="[URLCarrefour]" Version="V1" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1073.6,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="1067.2,282.4" sap2010:WorkflowViewState.IdRef="Sequence_29">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Error técnico en la navegación: &quot; + exception.Message]" />
+              <Rethrow sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1073.6,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1067.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Error detectado en el proceso, se procede según lo definido&quot;]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

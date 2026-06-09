@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v8t2d7LnvUqXm9-zFHZBnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" CVScreenId="6c8e00f1-c481-4b8a-b638-3463935e077a" CvElementArea="400, 181, 1131, 53" CvType="InputBox" DesignTimeRectangle="400, 182, 1132, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="c3c59f2c-bed7-4176-abe5-5cd834a9fc80" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6c8e00f1-c481-4b8a-b638-3463935e077a" CvTextArea="422, 196, 217, 20" CvTextArgument="Buscar en todo Carrefour" CvType="Text" DesignTimeRectangle="422, 196, 218, 21" ElementType="Text" Guid="3a11ef1e-d24a-45ea-9b0c-a85887b7d4d5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="53191073335407d6488ab64af4d9790b.png" xmlns="">0je6o6j2rwkCUWyqgMZWFQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

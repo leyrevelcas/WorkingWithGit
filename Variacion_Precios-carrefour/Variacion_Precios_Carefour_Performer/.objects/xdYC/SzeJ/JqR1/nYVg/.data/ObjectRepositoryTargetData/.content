@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HmtkTi6H2kas5IXn7tJIdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carrefour.es" DesignTimeRectangle="747, 254, 664, 142" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='x-message x-text x-col-span-6 x-col-start-5' tag='DIV' aaname='' check:innerText='¡Vaya! No hemos encontrado coincidencias para gkjg.&amp;#xA;&amp;#xA;Sin embargo, encontramos productos para:&amp;#xA;&amp;#xA;gang' /&gt;" Guid="4fcb4007-114e-441c-82b6-6d1596470781" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Compra Online en Carrefour: Ofertas en Alimentación, Tecnología, Hogar' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8d90587e-e200-4be2-8f91-eb1af6df8478" CvElementArea="407, 160, 1048, 42" CvType="InputBox" DesignTimeRectangle="409, 161, 1001, 40" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='x-search-input x-input x-ml-0 x-pl-8' placeholder='Buscar en todo Carrefour...' aaname='' /&gt;" Guid="300d1b00-060d-4ce8-b254-ccaba7e615bc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2d95b38851c7f912085fe41f09cac044.png" xmlns="">0jG9NReL8KkOS_a1zk2DiUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
